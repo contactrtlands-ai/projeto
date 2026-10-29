@@ -47,10 +47,10 @@
         <nav class="nav" id="menu" aria-label="Navegação principal">
           <ul>
             <li><a href="#inicio">Início</a></li>
+            <li><a href="#contato">Contato</a></li>
             <li><a href="#servicos">Serviços</a></li>
             <li><a href="#sobre">Sobre</a></li>
             <li><a href="#projetos">Projetos</a></li>
-            <li><a href="#contato">Contato</a></li>
           </ul>
           <div class="nav-actions">
             <a class="nav-phone" href="tel:+5515997065254">(15) 99706-5254</a>
@@ -77,6 +77,55 @@
           <figure class="ph ph-hero">
             <img src="assets/img/hero-estrutura-telhado.jpg" alt="Estrutura de madeira de um telhado em obra, vista por baixo com o céu ao fundo" width="680" height="510" fetchpriority="high">
           </figure>
+        </div>
+      </section>
+
+      <!-- ============ CONTATO ============ -->
+      <section class="section" id="contato" aria-labelledby="contato-titulo">
+        <div class="container contact-grid">
+          <div>
+            <h2 id="contato-titulo" class="big-title">Descreva sua necessidade.</h2>
+            <p class="contact-text">Preencha os campos ao lado. Ao enviar, o WhatsApp será aberto com a sua mensagem pronta para a Bau Soluções.</p>
+            <ul class="contact-list">
+              <li><span>Telefone / WhatsApp</span><a href="tel:+5515997065254">(15) 99706-5254</a></li>
+              <li><span>Localização</span>Iperó — SP</li>
+              <!-- CONFIRMAR antes de publicar o endereço completo -->
+              <li><span>Endereço informado</span>R. Vitória Nogueira dos Santos, Capuavinha, Iperó — SP, 18560-000</li>
+            </ul>
+          </div>
+
+          <form class="form" id="form-orcamento" novalidate>
+            <div class="field">
+              <label for="nome">Nome</label>
+              <input id="nome" name="nome" type="text" autocomplete="name" required aria-describedby="erro-nome">
+              <p class="error" id="erro-nome" role="alert"></p>
+            </div>
+            <div class="field">
+              <label for="telefone">Telefone para contato</label>
+              <input id="telefone" name="telefone" type="tel" inputmode="tel" autocomplete="tel" placeholder="(15) 90000-0000" required aria-describedby="erro-telefone">
+              <p class="error" id="erro-telefone" role="alert"></p>
+            </div>
+            <div class="field">
+              <label for="servico">Tipo de serviço desejado</label>
+              <select id="servico" name="servico" required aria-describedby="erro-servico">
+                <option value="">Selecione</option>
+                <option>Construção residencial</option>
+                <option>Fundações</option>
+                <option>Alvenaria e muros</option>
+                <option>Estruturas de telhado</option>
+                <option>Reformas residenciais</option>
+                <option>Outro serviço</option>
+              </select>
+              <p class="error" id="erro-servico" role="alert"></p>
+            </div>
+            <div class="field">
+              <label for="mensagem">Descrição da necessidade</label>
+              <textarea id="mensagem" name="mensagem" rows="4" required aria-describedby="erro-mensagem"></textarea>
+              <p class="error" id="erro-mensagem" role="alert"></p>
+            </div>
+            <button class="btn btn-accent btn-lg" type="submit">Continuar no WhatsApp</button>
+            <p class="form-note">Este formulário não envia dados para um servidor. Ele prepara sua mensagem e abre o WhatsApp para você enviá-la.</p>
+          </form>
         </div>
       </section>
 
@@ -219,54 +268,6 @@
         </div>
       </section>
 
-      <!-- ============ CONTATO ============ -->
-      <section class="section" id="contato" aria-labelledby="contato-titulo">
-        <div class="container contact-grid">
-          <div>
-            <h2 id="contato-titulo" class="big-title">Descreva sua necessidade.</h2>
-            <p class="contact-text">Preencha os campos ao lado. Ao enviar, o WhatsApp será aberto com a sua mensagem pronta para a Bau Soluções.</p>
-            <ul class="contact-list">
-              <li><span>Telefone / WhatsApp</span><a href="tel:+5515997065254">(15) 99706-5254</a></li>
-              <li><span>Localização</span>Iperó — SP</li>
-              <!-- CONFIRMAR antes de publicar o endereço completo -->
-              <li><span>Endereço informado</span>R. Vitória Nogueira dos Santos, Capuavinha, Iperó — SP, 18560-000</li>
-            </ul>
-          </div>
-
-          <form class="form" id="form-orcamento" novalidate>
-            <div class="field">
-              <label for="nome">Nome</label>
-              <input id="nome" name="nome" type="text" autocomplete="name" required aria-describedby="erro-nome">
-              <p class="error" id="erro-nome" role="alert"></p>
-            </div>
-            <div class="field">
-              <label for="telefone">Telefone para contato</label>
-              <input id="telefone" name="telefone" type="tel" inputmode="tel" autocomplete="tel" placeholder="(15) 90000-0000" required aria-describedby="erro-telefone">
-              <p class="error" id="erro-telefone" role="alert"></p>
-            </div>
-            <div class="field">
-              <label for="servico">Tipo de serviço desejado</label>
-              <select id="servico" name="servico" required aria-describedby="erro-servico">
-                <option value="">Selecione</option>
-                <option>Construção residencial</option>
-                <option>Fundações</option>
-                <option>Alvenaria e muros</option>
-                <option>Estruturas de telhado</option>
-                <option>Reformas residenciais</option>
-                <option>Outro serviço</option>
-              </select>
-              <p class="error" id="erro-servico" role="alert"></p>
-            </div>
-            <div class="field">
-              <label for="mensagem">Descrição da necessidade</label>
-              <textarea id="mensagem" name="mensagem" rows="4" required aria-describedby="erro-mensagem"></textarea>
-              <p class="error" id="erro-mensagem" role="alert"></p>
-            </div>
-            <button class="btn btn-accent btn-lg" type="submit">Continuar no WhatsApp</button>
-            <p class="form-note">Este formulário não envia dados para um servidor. Ele prepara sua mensagem e abre o WhatsApp para você enviá-la.</p>
-          </form>
-        </div>
-      </section>
     </main>
 
     <!-- ============ RODAPÉ ============ -->
@@ -279,10 +280,10 @@
         <nav aria-label="Rodapé">
           <ul>
             <li><a href="#inicio">Início</a></li>
+            <li><a href="#contato">Contato</a></li>
             <li><a href="#servicos">Serviços</a></li>
             <li><a href="#sobre">Sobre</a></li>
             <li><a href="#projetos">Projetos</a></li>
-            <li><a href="#contato">Contato</a></li>
           </ul>
         </nav>
         <a class="btn btn-outline" href="#" data-wa data-msg="Olá! Encontrei a Bau Soluções pelo site e gostaria de conversar sobre um serviço de construção. Poderiam me orientar sobre como solicitar um orçamento?" target="_blank" rel="noopener">Falar pelo WhatsApp</a>
